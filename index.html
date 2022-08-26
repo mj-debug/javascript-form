@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Registration</title>
+    </head>
+    <body>
+        <div class="body-section">
+            <!-- Body Section 1 Begins -->
+            <div class="body-section-1">
+                <h1>INFORMATION</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                    Dignissimos nisi odit veritatis architecto dolores ratione,  <br> 
+                    porro corporis ea neque tempore praesentium aspernatur qui repud <br>
+                    beatae ipsam at quia delectus tempore omnis. Alias officia nostrum  <br>
+                    unde repellat, cum odio qui eius maiores, dolorem voluptate ut veritatis <br>
+                    fuga velit, expedita earum quia corrupti fugiat ut molestias doloribus vel <br>
+                    accusamus error atque, eveniet repudiandae pariatur magni ea laboriosam <br> 
+                    rerum laudantium. Perspiciatis quam dolorem sapiente architecto hic illo nulla<br>
+                    asperiores voluptate quibusdam voluptatibus ipsum! Consequuntur<br>
+                    earum harum expedita, voluptates quibusdam optio delectus tenetur? Quis<br>
+                  
+                </p>
+                <a href="#"><button>Have an account</button></a>
+            </div>
+            <!-- Body Section 1 Ends -->
+            <!-- Body Section 2 Begins-->
+            <div class="body-section-2">
+                <!-- Error message Section Begins -->
+                <div id="errBox">
+                    <p id="errText"></p>
+                </div>
+                <!-- error message Section Ends -->
+                <h1>REGISTER FORM</h1>
+                <form action="index.html" method="GET" name="myform" onsubmit="return check_register()">
+                    <div class="flex-1">
+                        <div>
+                            <label for="">First name:</label><br>
+                            <input type="text" placeholder="Enter first name" id="fname" name="fname">
+                        </div>
+                        <div class="flex-1-right">
+                            <label for="">Last name:</label><br>
+                            <input type="text" placeholder="Enter last name" id="lname" name="lname">
+                        </div>
+                    </div>
+                    <div class="flex-2">
+                        <div>
+                            <label for="">Email:</label><br>
+                            <input type="text" placeholder="Enter email" id="mail" name="mail">
+                        </div>
+                        <div class="flex-2-right">
+                            <label for="">Phone:</label><br>
+                            <input type="text" placeholder="Enter phone number" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="flex-3">
+                        <div>
+                            <label for="">Password:</label><br>
+                            <input type="password" placeholder="Enter password" id="pass" name="pass">
+                        </div>
+                        <div class="flex-3-right">
+                            <label for="">Address:</label><br>
+                            <input type="text" placeholder="Enter address" id="address" name="address">
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <label for="">Gender:</label><br>
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                    </div>
+                    <div class="select">
+                        <label for="">Select State:</label><br>
+                        <select name="selection" id="selection">
+                            <option value="select state">Select State</option>
+                            <option value="abia">Abia</option>
+                            <option value="imo">Imo</option>
+                            <option value="enugu">Enugu</option>
+                            <option value="anambra">Anambra</option>
+                        </select>
+                    </div>
+                    <div class="skill">
+                        <label for="">Choose Skills:</label><br>
+                        <input type="checkbox" id="frontend" value="fronetend"> Frontend developer
+                        <input type="checkbox" id="backend" value="backend"> Backend developer
+                        <input type="checkbox" id="designer" value="designer"> UI/UX designer
+                    </div>
+                    <div class="term">
+                        <input type="checkbox" id="terms" value="terms"> <b>I agree to the</b><a href="#"> Terms and conditions</a>
+                    </div>
+                    <div class="btn">
+                        <button class="register" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Body Section 2 Ends -->
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
